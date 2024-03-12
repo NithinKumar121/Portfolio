@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="headder">
+    <div class="container">
+        <nav>
+            <img src="Photos/logo.png" class="logo">
+            <ul>
+                <li><a href="#" ><div class="nav-items">Home</div></a></li>
+                <li><a href="#" class="nav-items">About</a></li>
+                <li><a href="#" class="nav-items">Services</a></li>
+                <li><a href="#" class="nav-items">Portfolio</a></li>
+                <li><a href="#" class="nav-items">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="headder-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>NithinKumar</span> </h1>
+        </div>
+    </div>
+</div> 
+
+<!--------About-->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Photos/Jpg.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p style="font-size: medium;">
+                    This is NithinKumar currently persuing B.E Computer Science Engineering . <br> Passinate UI/UX designer and a cyber Security Enthusiast. 
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Expxerience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span>,<br>Designing Web/App interfaces</li>
+                        <li><span>Video Editor</span>,<br>Edit Videos Proffesionally</li>
+                        <li><span>Web Development</span>,<br>Web App Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Expxerience">
+                    <ul>
+                        <li><span>UI/UX</span>,<br>Designing Web/App interfaces</li>
+                        <li><span>Video Editor</span>,<br>Edit Videos Proffesionally</li>
+                        <li><span>Web Development</span>,<br>Web App Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2022-2026</span>,<br>Sri Eshwar College of Engineering</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------Services-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services </h1>
+        <div class="services-list">
+            <div>
+                <h2>UI/UX Designs</h2>
+                <p>i can do and give good UI/UX designs according to usewrs wish and on goiung trend</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Video Editing</h2>
+                <p>i can do and give good UI/UX designs according to usewrs wish and on goiung trend</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>Web Design</h2>
+                <p>i can do and give good UI/UX designs according to usewrs wish and on goiung trend</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------Portfolio-->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work </h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="Photos/1.jpg">
+                <div class="layer">
+                    <h3>Yet To Be Updated</h3>
+                    <p>The content will be updated as soon as possible.So Please wait come back later.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Photos/2.jpg">
+                <div class="layer">
+                    <h3>Yet To Be Updated</h3>
+                    <p>The content will be updated as soon as possible.So Please wait come back later.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Photos/3.jpg">
+                <div class="layer">
+                    <h3>Yet To Be Updated</h3>
+                    <p>The content will be updated as soon as possible.So Please wait come back later.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
